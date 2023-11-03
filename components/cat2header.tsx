@@ -87,15 +87,15 @@ export default function Header2() {
         </div>
       </div>
 
-      <div className="hidden md:flex justify-around items-center rounded-xl shadow-md h-12 w-24 border ">
+      <div className="hidden md:flex justify-around items-center pt-0  rounded-xl shadow-md h-12 w-24 border ">
         <span className="materials-icon material-symbols-outlined pl-2">
           sync_alt
         </span>
-        <p className="text-xs font-md pr-2">Filters</p>
+        <p className="text-xs font-md pr-2 ">Filters</p>
       </div>
 
-      <div className="hidden lg:flex items-center border rounded-xl h-12 px-2 shadow-md ">
-        <p className="text-xs font-md">Display total before taxes</p>
+      <div className="hidden lg:flex items-center pt-0 border rounded-xl h-12 px-2 shadow-md ">
+        <p className="text-xs font-md ">Display total before taxes</p>
 
         <button>
           <span className="material-symbols-outlined m-2">toggle_off</span>
