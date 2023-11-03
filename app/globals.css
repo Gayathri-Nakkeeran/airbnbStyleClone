@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.slider .slick-prev {
+  padding-right: 14px !important;
+  left: -2rem !important;
+}
+
+#header1 {
+  z-index: 1035 !important;
+}
+#header2 {
+  z-index: 1024 !important;
+}
+
+#pdpSticky {
+  z-index: 1024 !important;
+}
+
+#slider .slick-slider {
+  width: 50rem !important;
+  z-index: 1025 !important;
+}
+.slider .slick-next:before,
+.slider .slick-prev:before {
+  color: rgba(115, 112, 112, 0.821) !important;
+}
+
+#cardslider .slick-prev {
+  left: 4px !important;
+  z-index: 1025 !important;
+}
+#cardslider .slick-next {
+  right: 4px !important;
+  z-index: 1025 !important;
+}
+
+.slider .slick-slider .slick-next,
+.slider .slick-slider .slick-prev {
+  display: none !important;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  #slider .slick-slider {
+    width: 100vw !important;
+  }
+
+  #slider .slick-prev,
+  #slider .slick-next {
+    display: none !important;
+  }
+
+  .slider .slick-slider .slick-next,
+  .slider .slick-slider .slick-prev {
+    display: inline !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  #slider .slick-slider {
+    width: 30rem !important;
+  }
+  .slider .slick-slider .slick-next,
+  .slider .slick-slider .slick-prev {
+    display: inline !important;
+  }
+}
+
+#slider .slick-prev:before,
+#slider .slick-next:before {
+  color: rgba(115, 112, 112, 0.821) !important;
+}
+
+.mobileHeaderHome {
+  background-color: white;
+  z-index: 2000 !important;
+}
+
+#profilePopup {
+  z-index: 1400 !important;
+  background-color: white;
+}
+
+.mobilePDPSlider .slick-next:before,
+.mobilePDPSlider .slick-prev:before {
+  color: rgba(115, 112, 112, 0.821) !important;
+}
+
+.mobilePDPSlider .slick-next {
+  right: 4px !important;
+  z-index: 1025 !important;
+}
+
+.mobilePDPSlider .slick-prev {
+  left: 4px !important;
+  z-index: 1025 !important;
+}
