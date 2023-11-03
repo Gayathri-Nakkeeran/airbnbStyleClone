@@ -17,7 +17,7 @@ export default function MobileHeader(props: { page: string }) {
     );
 
   return (
-    <div className=" mobileHeaderHome flex md:hidden fixed top-0">
+    <div className=" mobileHeaderHome flex md:hidden sticky top-0">
       <div className="flex shadow-md items-center rounded-3xl h-12 w-72 mx-3 my-3">
         <span className="material-symbols-outlined mx-4 mt-2">search</span>
         <div>

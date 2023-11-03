@@ -28,11 +28,11 @@ export default function Header2() {
   return (
     <div
       id="header2"
-      className=" sticky top-20 flex align-items-center h-24 space-x-5  bg-white"
+      className=" sticky top-16 md:top-20 flex items-center h-20  md:h-24 space-x-5  bg-white pb-3 md:pb-0"
     >
-      <div className="flex items-center   ml:5 md:ml-16 md:mr-3 xl:mr-4  ">
+      <div className="flex items-center    ml:5 md:ml-16 md:mr-3 xl:mr-4  ">
         <div id="slider" className="md:ml-4 ">
-          <Slider className="h-20  pl-8  pt-3 " {...settings}>
+          <Slider className=" pl-8  " {...settings}>
             <div className="flex flex-col   text-gray-400 hover:text-black w-10">
               <i className=" pl-3 self-center fas fa-igloo h-4 w-4 hover:text-black"></i>
 
@@ -91,11 +91,11 @@ export default function Header2() {
         <span className="materials-icon material-symbols-outlined pl-2">
           sync_alt
         </span>
-        <p className="text-xs font-md pr-2 pt-3">Filters</p>
+        <p className="text-xs font-md pr-2">Filters</p>
       </div>
 
       <div className="hidden lg:flex items-center border rounded-xl h-12 px-2 shadow-md ">
-        <p className="text-xs font-md pt-3">Display total before taxes</p>
+        <p className="text-xs font-md">Display total before taxes</p>
 
         <button>
           <span className="material-symbols-outlined m-2">toggle_off</span>
