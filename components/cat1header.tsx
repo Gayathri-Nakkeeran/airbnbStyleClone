@@ -26,8 +26,8 @@ export default function Header1({ page }: propsType) {
     >
       <Image className="m-3" src={logo} alt="" width={100} height={100} />
 
-      {page == "home" && window?.screen.width > 800 ? (
-        <div>
+      {page == "home" ? (
+        <div className="hidden md:block">
           <button className="text-black text-sm px-2 lg:px-4 font-md">
             Stays
           </button>
@@ -39,7 +39,7 @@ export default function Header1({ page }: propsType) {
           </button>
         </div>
       ) : (
-        <div className=" flex mr-10 md:mr-4 justify-evenly items-center border rounded-full shadow-md h-16 hover:shadow-lg">
+        <div className=" md:hidden flex mr-10 md:mr-4 justify-evenly items-center border rounded-full shadow-md h-16 hover:shadow-lg">
           <button className=" text-left  border-r-2 text-xs px-4 xl:px-8 font-md">
             AnyWhere
           </button>
