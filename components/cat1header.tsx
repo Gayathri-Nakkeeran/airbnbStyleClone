@@ -39,7 +39,7 @@ export default function Header1({ page }: propsType) {
           </button>
         </div>
       ) : (
-        <div className=" md:hidden flex mr-10 md:mr-4 justify-evenly items-center border rounded-full shadow-md h-16 hover:shadow-lg">
+        <div className="  flex mr-10 md:mr-4 justify-evenly items-center border rounded-full shadow-md h-16 hover:shadow-lg">
           <button className=" text-left  border-r-2 text-xs px-4 xl:px-8 font-md">
             AnyWhere
           </button>
