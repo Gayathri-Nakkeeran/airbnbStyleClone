@@ -15,8 +15,6 @@ export default function Header1({ page }: propsType) {
     else {
       setLoginVisible(true);
     }
-
-    console.log("Dropdown required");
   };
 
   return (
@@ -28,7 +26,7 @@ export default function Header1({ page }: propsType) {
     >
       <Image className="m-3" src={logo} alt="" width={100} height={100} />
 
-      {page == "home" && window.screen.width > 800 ? (
+      {page == "home" && window?.screen.width > 800 ? (
         <div>
           <button className="text-black text-sm px-2 lg:px-4 font-md">
             Stays
